@@ -61,12 +61,12 @@ require(scales)
 scpcp(x, sel = "data[,1]",
 		 sel.palette="rgb", col.opt=list(alpha=0.5))
 
-# reordering using steptile. 
+# reordering using steptile.
 # optile does not work for the complete table since it has 9*3*2^60 > 3E19 entries
 # colors by the first unordered example:
 
 x2 <- steptile(x, k = 4)
-scpcp(x2, sel = "match(data[,1],levels(.GlobalEnv$x[,1]))", 
+scpcp(x2, sel = "match(data[,1],levels(.GlobalEnv$x[,1]))",
 		sel.palette="rgb", col.opt=list(alpha=0.5))
 
 
@@ -83,7 +83,3 @@ scpcp(x3, sel = "match(data[,1],levels(.GlobalEnv$x[,1]))",
 }
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

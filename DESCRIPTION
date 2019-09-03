@@ -15,5 +15,5 @@ LazyData: yes
 License: GPL (>= 2)
 NeedsCompilation: yes
 Packaged: 2018-07-17 12:48:30 UTC; alexanderpilhofer
-Repository: CRAN
-Date/Publication: 2018-07-17 13:20:03 UTC
+Encoding: UTF-8
+RoxygenNote: 6.1.1
