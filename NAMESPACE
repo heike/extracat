@@ -1,0 +1,41 @@
+useDynLib(extracat, .registration = TRUE)
+
+export(tfluctile, rmb, subtable, untableSet, dendro,   optile, fluctile, cfluctile, subtree, tfluctile, arsim, rmbmat, 
+innerval, quickfechner, hexpie, regmax, regmin, wdcor,approx.dcor, kendalls, imat, idat, Burt, barysort,BCC,BCI,WBCI, cmat, qBCI, combcl,cfcl, cohen, ME, optME,
+ sortandcut, heattile, getIs, getIs2, getcolors,getpath, scpcp, steptile,dcorMVtable,dcorMVdata, getbw, cutbw, ahist,JBCI,CBCI,itab, facetshade, visid, visna, visdf, gsac, setcover)
+import(plyr, grid, colorspace, ggplot2, TSP, hexbin, scales, data.table)
+
+
+  importFrom("grDevices", "col2rgb", "grey", "hsv", "rainbow", "rgb")
+  importFrom("graphics", "hist", "mtext", "par", "strheight", "strwidth",
+             "text")
+  importFrom("methods", "new")
+  importFrom("stats", "anova", "as.dist", "as.formula", "cor", "cutree",
+             "dist", "ftable", "glm", "hclust", "median", "na.omit",
+             "optimize", "pchisq", "pnorm", "predict", "qnorm",
+             "quantile", "rmultinom", "runif", "terms", "update",
+             "weighted.mean", "xtabs")
+  importFrom("utils", "combn", "install.packages", "tail")
+  importFrom("reshape2", "acast","colsplit")
+
+
+#S3method("*",gg)
+S3method(rmb,formula)
+S3method(rmb,table)
+S3method(rmb,ftable)
+S3method(rmb,glm)
+
+S3method(wdcor,default)
+S3method(wdcor,table)
+S3method(wdcor,data.frame)
+
+S3method(qBCI,default)
+S3method(qBCI,data.frame)
+S3method(qBCI,data.matrix)
+
+S3method(optile,list)
+S3method(optile,matrix)
+S3method(optile,table)
+S3method(optile,default)
+S3method(optile,ftable)
+S3method(optile,array)
