@@ -32,4 +32,16 @@ devtools::install_github("heike/extracat")
 
 ## Simple use case
 
+Several data sets are provided within the package, the command `visna` provides a good first overview of the where missing values are in a data set:
+```{r}
+library(extracat)
+visna(GeneEx)
+```
+
+Using additional sorting methods, we can work out patterns of missing values:
+
+```{r}
+# reorder both rows and columns:
+visna(GeneEx, sort = "b", sort.method="optile")
+```
 
