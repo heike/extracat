@@ -1,0 +1,35 @@
+---
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+
+[![Travis build status](https://travis-ci.org/heike/extracat.svg?branch=master)](https://travis-ci.org/heike/extracat)
+
+
+# extracat
+
+`extracat` is an R package for working with categorical variables.
+
+
+## Installation
+
+The package `extracat` has been archived from CRAN, but you can install it from this github repository:
+
+```{r, eval=FALSE}
+devtools::install_github("heike/extracat")
+```
+
+## Simple use case
+
+
