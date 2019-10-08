@@ -139,8 +139,7 @@
 <span class='no'>da</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/as.data.frame'>as.data.frame</a></span>(<span class='no'>a</span>)
 <span class='no'>clusters</span> <span class='kw'>&lt;-</span> <span class='fu'>cfcl</span>( <span class='no'>da</span>, <span class='kw'>ll</span> <span class='kw'>=</span> <span class='no'>cfa</span>)
 
-<span class='fu'><a href='https://www.rdocumentation.org/packages/grDevices/topics/dev'>dev.new</a></span>()
-<span class='fu'><a href='fluctile.html'>fluctile</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/xtabs'>xtabs</a></span>(<span class='no'>da</span>$<span class='no'>Freq</span>~<span class='no'>clusters</span>[,<span class='fl'>1</span>] + <span class='no'>clusters</span>[,<span class='fl'>2</span>]))</div><div class='output co'>#&gt; viewport[base] </div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/grDevices/topics/dev'>dev.new</a></span>()</div><div class='output co'>#&gt; <span class='message'>dev.new(): using pdf(file="Rplots67.pdf")</span></div><div class='input'><span class='fu'><a href='fluctile.html'>fluctile</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/xtabs'>xtabs</a></span>(<span class='no'>da</span>$<span class='no'>Freq</span>~<span class='no'>clusters</span>[,<span class='fl'>1</span>] + <span class='no'>clusters</span>[,<span class='fl'>2</span>]))</div><div class='output co'>#&gt; viewport[base] </div><div class='input'>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='fu'><a href='combcl.html'>combcl</a></span>(<span class='no'>clusters</span>))</div><div class='output co'>#&gt; 
 #&gt;   1   2   3   4   5   0 
 #&gt;   8   2  12   9  10 163 </div></pre>

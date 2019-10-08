@@ -66,7 +66,25 @@
 <div id="extracat" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#extracat" class="anchor"></a>extracat</h1></div>
-<p>R package for working with categorical variables</p>
+<p><code>extracat</code> is an R package for working with categorical variables.</p>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<p>The package <code>extracat</code> has been archived from CRAN, but you can install it from this github repository:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"heike/extracat"</span>)</a></code></pre></div>
+</div>
+<div id="simple-use-case" class="section level2">
+<h2 class="hasAnchor">
+<a href="#simple-use-case" class="anchor"></a>Simple use case</h2>
+<p>Several data sets are provided within the package, the command <code>visna</code> provides a good first overview of the where missing values are in a data set:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(extracat)</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw"><a href="reference/visid.html">visna</a></span>(GeneEx)</a></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-3-1.png" width="700"></p>
+<p>Using additional sorting methods, we can work out patterns of missing values:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># reorder both rows and columns:</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw"><a href="reference/visid.html">visna</a></span>(GeneEx, <span class="dt">sort =</span> <span class="st">"b"</span>, <span class="dt">sort.method=</span><span class="st">"optile"</span>)</a></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="700"></p>
+</div>
 </div>
   </div>
 

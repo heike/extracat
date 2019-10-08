@@ -192,10 +192,10 @@ This is automatically chosen for vectors with more than 20000 entries.</p></td>
 
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>require</a></span>(<span class='no'>scales</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/graphics/topics/plot'>plot</a></span>(<span class='no'>x</span>,<span class='no'>y</span>,<span class='kw'>pch</span><span class='kw'>=</span><span class='fl'>19</span>,<span class='kw'>col</span><span class='kw'>=</span><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/alpha'>alpha</a></span>(<span class='st'>"black"</span>,<span class='fl'>0.2</span>))</div><div class='img'><img src='dcor-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.time'>system.time</a></span>(<span class='no'>dd</span><span class='kw'>&lt;-</span><span class='fu'>wdcor</span>(<span class='no'>x</span>,<span class='no'>y</span>))</div><div class='output co'>#&gt;    user  system elapsed 
-#&gt;   0.367   0.047   0.635 </div><div class='input'>
+#&gt;   0.310   0.029   0.368 </div><div class='input'>
 <span class='no'>y2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/Uniform'>runif</a></span>(<span class='fl'>2000</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/system.time'>system.time</a></span>(<span class='no'>dde</span><span class='kw'>&lt;-</span><span class='fu'>wdcor</span>(<span class='no'>x</span>,<span class='no'>y2</span>))</div><div class='output co'>#&gt;    user  system elapsed 
-#&gt;   0.356   0.017   0.492 </div><div class='input'><span class='no'>dd</span></div><div class='output co'>#&gt; [1] 0.1457353</div><div class='input'><span class='no'>dde</span></div><div class='output co'>#&gt; [1] 0.07414604</div><div class='input'>
+#&gt;   0.332   0.014   0.396 </div><div class='input'><span class='no'>dd</span></div><div class='output co'>#&gt; [1] 0.1457353</div><div class='input'><span class='no'>dde</span></div><div class='output co'>#&gt; [1] 0.07414604</div><div class='input'>
 </div><span class='co'># NOT RUN {</span>
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='no'>diamonds</span>$<span class='no'>price</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='no'>diamonds</span>$<span class='no'>carat</span>
